@@ -54,39 +54,63 @@
     </Access>
     <Access Scope="GlobalVariable" UId="23">
       <Symbol>
+        <Component Name="Tag_2" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
         <Component Name="sal_uno" />
       </Symbol>
     </Access>
-    <Part Name="Contact" UId="24" />
-    <Part Name="Contact" UId="25">
+    <Part Name="Contact" UId="25" />
+    <Part Name="Contact" UId="26">
       <Negated Name="operand" />
     </Part>
-    <Part Name="Coil" UId="26" />
+    <Part Name="Contact" UId="27">
+      <Negated Name="operand" />
+    </Part>
+    <Part Name="O" UId="28">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+    </Part>
+    <Part Name="Coil" UId="29" />
   </Parts>
   <Wires>
-    <Wire UId="27">
+    <Wire UId="30">
       <Powerrail />
-      <NameCon UId="24" Name="in" />
-    </Wire>
-    <Wire UId="28">
-      <IdentCon UId="21" />
-      <NameCon UId="24" Name="operand" />
-    </Wire>
-    <Wire UId="29">
-      <NameCon UId="24" Name="out" />
       <NameCon UId="25" Name="in" />
     </Wire>
-    <Wire UId="30">
-      <IdentCon UId="22" />
+    <Wire UId="31">
+      <IdentCon UId="21" />
       <NameCon UId="25" Name="operand" />
     </Wire>
-    <Wire UId="31">
+    <Wire UId="32">
       <NameCon UId="25" Name="out" />
       <NameCon UId="26" Name="in" />
+      <NameCon UId="27" Name="in" />
     </Wire>
-    <Wire UId="32">
-      <IdentCon UId="23" />
+    <Wire UId="33">
+      <IdentCon UId="22" />
       <NameCon UId="26" Name="operand" />
+    </Wire>
+    <Wire UId="34">
+      <NameCon UId="26" Name="out" />
+      <NameCon UId="28" Name="in1" />
+    </Wire>
+    <Wire UId="35">
+      <IdentCon UId="23" />
+      <NameCon UId="27" Name="operand" />
+    </Wire>
+    <Wire UId="36">
+      <NameCon UId="27" Name="out" />
+      <NameCon UId="28" Name="in2" />
+    </Wire>
+    <Wire UId="37">
+      <NameCon UId="28" Name="out" />
+      <NameCon UId="29" Name="in" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="24" />
+      <NameCon UId="29" Name="operand" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
